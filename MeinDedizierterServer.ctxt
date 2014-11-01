@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MeinDedizierterServer()
+comment0.text=\r\n\ Erstellt\ einen\ neuen\ dedizierten\ Server\ am\ Port\ 87654.\r\n
+comment1.params=
+comment1.target=void\ shoot()
+comment2.params=
+comment2.target=void\ run()
+numComments=3

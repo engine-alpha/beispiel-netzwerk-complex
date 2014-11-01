@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=ipAdresse\ name
+comment0.target=MeinClient(java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=void\ vorstellen()
+comment2.params=
+comment2.target=void\ frageStellen()
+comment3.params=string
+comment3.target=void\ empfangeString(java.lang.String)
+numComments=4

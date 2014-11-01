@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=verbindung
+comment0.target=ClientHandler(ea.NetzwerkVerbindung)
+comment1.params=string
+comment1.target=void\ empfangeString(java.lang.String)
+comment1.text=---\ Empfaenger-Methoden\ ---
+comment2.params=
+comment2.target=void\ verbindungBeendet()
+comment3.params=i
+comment3.target=void\ empfangeInt(int)
+comment4.params=b
+comment4.target=void\ empfangeByte(byte)
+comment5.params=d
+comment5.target=void\ empfangeDouble(double)
+comment6.params=c
+comment6.target=void\ empfangeChar(char)
+comment7.params=b
+comment7.target=void\ empfangeBoolean(boolean)
+numComments=8
