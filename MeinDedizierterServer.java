@@ -30,10 +30,17 @@ implements Runnable{
         new Thread(this).start();
     }
     
-    public void shoot() {
-        server.sendeString("sss");
+    /**
+     * Schickt eine einfache Broadcast-Nachricht an alle Clients raus.
+     */
+    public void broadcast() {
+        server.sendeString("Boroadcast an alle!");
     }
     
+    /**
+     * In dieser Run-Methode wartet ein eigener Thread nur auf neu andockende Clients,
+     * um diese dann durch einen eigenen ClientHandler zu bedienen.
+     */
     @Override
     public void run() {
         //Dauerschleife
@@ -41,6 +48,7 @@ implements Runnable{
             //Gib mir die nächste Verbindung
             //   (warte ggf. solange, bis eine neue Verbindung zustandekommt)
             NetzwerkVerbindung verbindung = server.naechsteVerbindungAusgeben();
+            
             
             handlers.add(new ClientHandler(verbindung));
         }

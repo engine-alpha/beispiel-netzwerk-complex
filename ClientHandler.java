@@ -30,7 +30,7 @@ implements Empfaenger {
  
     @Override
     public void empfangeString (String string) {
-        System.out.println("Got " + string);
+        System.out.println("[Server hat empfangen:] " + string);
         if(string.startsWith("Hallo, ich bin ")) {
             //Client stellt sich vor => Namen übernehmen
             

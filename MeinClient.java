@@ -19,9 +19,12 @@ extends Client {
         super(ipAdresse, 7654);
         this.name = name;
         
-    }
-    
-    public void vorstellen() {
+        //Warten, bis die Verbindung zum Server steht:
+        //   Achtung: Wenn kein Server gefunden werden kann,
+        //            friert dieser Konstruktor ein!
+        warteAufVerbindung();
+        
+        //Gleich mal Hallo sagen.
         sendeString("Hallo, ich bin "  + name);
     }
     
@@ -31,6 +34,7 @@ extends Client {
     
     @Override
     public void empfangeString(String string) {
-        System.out.println(string);
+        //empfangenen String einfach an der Konsole ausgeben
+        System.out.println("[Client " + name + " hat empfangen:] " +string);
     }
 }
